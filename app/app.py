@@ -12,7 +12,7 @@ def index():
 
 @app.route('/lolcats/')
 def lolcats():
-    return 'ZOMG IM THE WORST!' + request.cookies.get('zone', 0)
+    return 'Zone Cookie = ' + request.cookies.get('zone', 0)
 
 
 if __name__ == '__main__':
